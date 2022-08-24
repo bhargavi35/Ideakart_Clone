@@ -1,0 +1,64 @@
+.container2 {
+  margin-top: 1px;
+  height: 800px;
+  text-align: center;
+  width: 100%;
+  padding-left: 50px;
+  background-image: url("https://ideakart.com/assets/youridea-23d18c0fab7feb4d66e4c1dbc419428c71b2014ff742fc52b4006f6b65af6b67.jpg");
+  font-family: "Poppins", sans-serif;
+  background-repeat: no-repeat;
+  padding: 30px;
+  background-size: cover;
+}
+
+.top {
+  margin: auto;
+}
+
+.box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.line1 {
+  width: 400px;
+  height: 100px;
+  text-align: center;
+}
+
+.line2 {
+  width: 400px;
+  height: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.input_box {
+  width: 500px;
+  height: 30px;
+  padding-left: 5px;
+  border-radius: 2%;
+}
+.input_box :hover{
+    background-color: aqua;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.msg1 {
+  width: 90%;
+  height: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+.msg2 {
+  width: 73pc;
+  height: 30%;
+  
+}
+
+.butt {
+  padding: 5px;
+  background-color: green;
+  border-radius: 4px;
+}
