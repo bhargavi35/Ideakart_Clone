@@ -40,9 +40,10 @@
   padding-left: 5px;
   border-radius: 2%;
 }
-.input_box :hover{
-    background-color: aqua;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+.input_box :hover {
+  background-color: aqua;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 .msg1 {
   width: 90%;
@@ -54,7 +55,6 @@
 .msg2 {
   width: 73pc;
   height: 30%;
-  
 }
 
 .butt {
