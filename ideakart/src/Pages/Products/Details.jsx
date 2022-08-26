@@ -12,7 +12,6 @@ export const Details = () => {
       .get("https://6300c49f290d71b581e28acd.mockapi.io/details")
       .then(({ data }) => {
         // console.log(data);
-
         setInfo(data);
       });
   }, []);

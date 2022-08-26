@@ -1,21 +1,22 @@
 .Earn {
   font-size: 36px;
-  margin-left: 10.5%;
+  text-align: left;
+  margin-left: 10%;
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-.Main {
+.mine {
   display: flex;
-  width: 87%;
+  width: 80%;
   margin: auto;
   gap: 35px;
 }
 
 .child {
   border: 1px solid black;
-  height: 350px;
-  width: 370px;
+  height: 400px;
+  width: 30%;
 }
 .Number {
   text-align: center;
@@ -38,7 +39,10 @@
   text-align: center;
 }
 li {
-  margin-left: 25px;
+  margin-left: 15%;
+  text-align: justify;
+  margin-right: 8%;
+
 }
 
 .image {
@@ -47,14 +51,15 @@ li {
   width: 90%;
   height: 600px;
 }
-.button {
+.button1 {
   height: 40px;
   width: 110px;
-  margin-bottom: 30px;
-  margin-top: 30px;
   background-color: #337ab7;
   border: none;
   border-radius: 5px;
-  margin-left: 45%;
   color: #f0f8ff;
+}
+.ytb{
+  width: 80%;
+  margin: auto;
 }

@@ -12,7 +12,7 @@ export const SinglePage = () => {
       .get(`https://6300c49f290d71b581e28acd.mockapi.io/details/${id}`)
       .then(({ data }) => {
         setShowData(data);
-        console.log(data);
+        // console.log(data);
       });
   }, [id]);
 

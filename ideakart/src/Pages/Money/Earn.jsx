@@ -1,5 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { Footer } from "../../Components/Footer";
+import { Navbar } from "../../Components/Navbar";
+import "./index.css";
 
 export const Earn = () => {
   const navigate = useNavigate();
@@ -9,14 +12,16 @@ export const Earn = () => {
 
   return (
     <>
+      <Navbar />
       <div className="Earn">
         <p>Earn Money Online | Working from Home</p>
       </div>
-      <div className="Main">
+      <div className="mine">
         <div className="child">
           <p className="Number">1</p>
           <p className="heading">Upload Products that</p>
           <p className="heading">you have!</p>
+          <br />
           <ul>
             <li className="li">Create your Account by clicking here</li>
             <li className="li">Verify your account</li>
@@ -25,12 +30,8 @@ export const Earn = () => {
               Pick any product. For example mobile <br /> phone, or any item.
             </li>
             <li className="li">Search for it in the Database.</li>
-            <li className="li">
-              If it's available, upload a photograph.
-            </li>
-            <li className="li">
-              Please mention the price you bought it at.
-            </li>
+            <li className="li">If it's available, upload a photograph.</li>
+            <li className="li">Please mention the price you bought it at.</li>
           </ul>
         </div>
         <div className="child">
@@ -38,10 +39,9 @@ export const Earn = () => {
           <p className="heading">Provide a brief</p>
           <p className="heading">description of how to</p>
           <p className="heading">use!</p>
+          <br />
           <ul>
-            <li className="li">
-              Describe the product you just uploaded.
-            </li>
+            <li className="li">Describe the product you just uploaded.</li>
             <li className="li">
               Mention from where you bought it, online <br /> or offline
             </li>
@@ -56,10 +56,9 @@ export const Earn = () => {
           <p className="heading">On Approval get</p>
           <p className="heading">scratch cards and earn</p>
           <p className="heading">money!</p>
+          <br />
           <ul>
-            <li className="li">
-              We will review the products you uploaded.
-            </li>
+            <li className="li">We will review the products you uploaded.</li>
             <li className="li">
               On approval you will get a scratch card, which can be money or
               coupon code.
@@ -72,7 +71,7 @@ export const Earn = () => {
         </div>
       </div>
 
-      <div>
+      <div className="ytb">
         <iframe
           className="image"
           src="https://www.youtube.com/embed/TfQyg-DSHBo"
@@ -82,10 +81,10 @@ export const Earn = () => {
           allowfullscreen
         ></iframe>
       </div>
-      <button className="button" onClick={handleClick}>
+      <button className="button1" onClick={handleClick}>
         Get Started!
       </button>
-
+      <Footer />
     </>
   );
 };

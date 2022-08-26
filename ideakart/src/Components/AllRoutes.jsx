@@ -5,6 +5,7 @@ import Contactpage from "../Pages/contact/Contact";
 import Home from "../Pages/Home";
 import { SignIn } from "../Pages/logIN/SignIn";
 import { SignUp } from "../Pages/logIN/SignUp";
+import { Earn } from "../Pages/Money/Earn";
 import { PrivacyPolicy } from "../Pages/Policy/Privacy";
 import { RefundPolicy } from "../Pages/Policy/Refund";
 import { Details } from "../Pages/Products/Details";
@@ -26,6 +27,8 @@ const AllRoutes = () => {
       <Route path="/search" element={<Search />} />
       <Route path="/privacy" element={<PrivacyPolicy />} />
       <Route path="/refund" element={<RefundPolicy />} />
+      <Route path="/earn" element={<Earn />} />
+
     </Routes>
   );
 };
