@@ -17,20 +17,20 @@ export const Footer = () => {
       <Link style={{ textDecoration: "none", color: "#337ab7" }} to="/contact">
         <li>Contact</li>
       </Link>
-      <Link style={{ textDecoration: "none", color: "#337ab7" }} to="/">
-        <li>Contact</li>
+      <Link style={{ textDecoration: "none", color: "#337ab7" }} to="/search">
+        <li>Search</li>
       </Link>
 
       <Link style={{ textDecoration: "none", color: "#337ab7" }} to="/privacy">
         <li>Privacy Policy</li>
       </Link>
-      <Link style={{ textDecoration: "none", color: "#337ab7" }} to="/return">
-        <li>Return Policy</li>
+      <Link style={{ textDecoration: "none", color: "#337ab7" }} to="/refund">
+        <li>Refund Policy</li>
       </Link>
       <Link
         style={{ textDecoration: "none", color: "#337ab7" }}
         target="_blank"
-        to="/earn"
+        to="#"
       >
         <li>Earn Money Online</li>
       </Link>
