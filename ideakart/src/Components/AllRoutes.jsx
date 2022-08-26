@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import About from "../Pages/About";
 import Contactpage from "../Pages/contact/Contact";
 import Home from "../Pages/Home";
-// import { SignIn } from "../Pages/logIN/SignIn";
+import { SignIn } from "../Pages/logIN/SignIn";
 import { SignUp } from "../Pages/logIN/SignUp";
 import { PrivacyPolicy } from "../Pages/Policy/Privacy";
 import { RefundPolicy } from "../Pages/Policy/Refund";
@@ -18,7 +18,7 @@ const AllRoutes = () => {
       <Route path="/details" element={<Details />} />
       <Route path="/details/:id" element={<SinglePage />}></Route>
 
-      {/* <Route path="/signin" element={<SignIn />} /> */}
+      <Route path="/signin" element={<SignIn />} />
       <Route path="/signup" element={<SignUp />} />
 
       <Route path="/about" element={<About />} />
