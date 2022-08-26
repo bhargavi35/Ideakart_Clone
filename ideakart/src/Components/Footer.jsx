@@ -29,8 +29,8 @@ export const Footer = () => {
       </Link>
       <Link
         style={{ textDecoration: "none", color: "#337ab7" }}
-        target="_blank"
-        to="#"
+        // target="_blank"
+        to="/earn"
       >
         <li>Earn Money Online</li>
       </Link>

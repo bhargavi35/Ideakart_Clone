@@ -1,0 +1,65 @@
+.Earn {
+  font-size: 36px;
+  text-align: left;
+  margin-left: 10%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.mine {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  gap: 35px;
+}
+
+.child {
+  border: 1px solid black;
+  height: 400px;
+  width: 30%;
+}
+.Number {
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: #f0f8ff;
+  height: 40px;
+  width: 30px;
+  margin-top: 20px;
+  border: 1px solid #f0f8ff;
+  margin-left: 45%;
+  border-radius: 50%;
+  line-height: 40px;
+  margin-bottom: 2px;
+}
+.heading {
+  font-size: 30px;
+  margin-left: 5px;
+  margin-right: 25px;
+  line-height: 30px;
+  text-align: center;
+}
+li {
+  margin-left: 15%;
+  text-align: justify;
+  margin-right: 8%;
+
+}
+
+.image {
+  margin-top: 50px;
+  margin: 70px;
+  width: 90%;
+  height: 600px;
+}
+.button1 {
+  height: 40px;
+  width: 110px;
+  background-color: #337ab7;
+  border: none;
+  border-radius: 5px;
+  color: #f0f8ff;
+}
+.ytb{
+  width: 80%;
+  margin: auto;
+}

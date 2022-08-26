@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios"
+import axios from "axios";
 import {
   Box,
   Flex,
@@ -14,7 +14,7 @@ import {
   MenuItem,
   Center,
   MenuDivider,
-  useDisclosure
+  useDisclosure,
 } from "@chakra-ui/react";
 
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
@@ -83,7 +83,7 @@ export const Navbar = () => {
                   backgroundColor={"white"}
                   onClick={getBooks}
                 >
-                  Search
+                  <Link to="/search">Search</Link>
                 </Button>
               </Box>
             </Box>
@@ -102,14 +102,14 @@ export const Navbar = () => {
               <Link to={"/contact"}>Contact</Link>
             </Box>
             {/* {!loggedIn && ( */}
-              <Box>
-                <Link to={"/signin"}>Sign In</Link>
-              </Box>
+            <Box>
+              <Link to={"/signin"}>Sign In</Link>
+            </Box>
             {/* )} */}
             {/* {!signedUp && !loggedIn && ( */}
-              <Box>
-                <Link to={"/signup"}>Sign Up</Link>
-              </Box>
+            <Box>
+              <Link to={"/signup"}>Sign Up</Link>
+            </Box>
             {/* )} */}
           </Flex>
 
@@ -178,7 +178,6 @@ export const Navbar = () => {
 };
 
 export const Profile = () => {
-    
   return (
     <Flex>
       <Menu>
@@ -203,14 +202,10 @@ export const Profile = () => {
             />
           </Center>
           <br />
-          <Center>
-            {/* <p>{loggedInUser}</p> */}
-          </Center>
+          <Center>{/* <p>{loggedInUser}</p> */}</Center>
           <br />
           <MenuDivider />
-          <MenuItem >
-            Logout
-          </MenuItem>
+          <MenuItem>Logout</MenuItem>
         </MenuList>
       </Menu>
     </Flex>

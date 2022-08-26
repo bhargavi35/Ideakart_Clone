@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Footer } from "../../Components/Footer";
 import { Navbar } from "../../Components/Navbar";
 import "./Contact.css";
-const Contactpage = () => {
+function Contactpage() {
   const navigate = useNavigate();
   const handleSubmit = () => {
     alert("Your details are captured, we will get back to you shortly");
@@ -58,28 +58,29 @@ const Contactpage = () => {
 
         <div className="msg1">
           <p>Message*</p>
-          <textarea className="msg2" placeholder="Message for me*" type="text">
-             
-          </textarea>
+          <textarea
+            className="msg2"
+            placeholder="Message for me*"
+            type="text"
+          ></textarea>
           <br />
           <button
-          style={{
-            backgroundColor: "green",
-            color: "white",
-            padding: "10px",
-            borderRadius: "5px",
-            marginTop:"2%"
-          }}
-          type="submit"
-        >
-          Send message
-        </button>
+            style={{
+              backgroundColor: "green",
+              color: "white",
+              padding: "10px",
+              borderRadius: "5px",
+              marginTop: "2%",
+            }}
+            type="submit"
+          >
+            Send message
+          </button>
         </div>
-      
       </form>
       <Footer />
     </>
   );
-};
+}
 
 export default Contactpage;
