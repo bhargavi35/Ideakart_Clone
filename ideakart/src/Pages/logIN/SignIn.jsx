@@ -48,7 +48,7 @@ export const SignIn = () => {
             {isLoading && <Spinner color="red.500" />}
           </Button>
           <Box>
-            <Link to="/signup">SignUp</Link>
+            navigate("/signup")
           </Box>
           <Box>
             <Link to="/signin">Forgot your password?</Link>
