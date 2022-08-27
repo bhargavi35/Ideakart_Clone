@@ -38,7 +38,6 @@ export const SignUp = () => {
     if (name && mobile && email && password && rePassword === password) {
       // console.log(user.name)
       // console.log(user.email)
-      // console.log(user.password)
       navigate("/signIn");
     } else {
       alert("invalid input");
