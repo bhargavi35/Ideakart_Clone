@@ -10,6 +10,7 @@ import {
   Link,
   Box,
 } from "@chakra-ui/react";
+
 import React, { useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 import { Footer } from "../../Components/Footer";
@@ -24,7 +25,7 @@ export const SignIn = () => {
     setIsLoading(true);
     setTimeout(() => {
       setIsLoading(false);
-      navigate("/details");
+      navigate("/");
     }, 1500);
   };
   return (
@@ -46,9 +47,9 @@ export const SignIn = () => {
             Login
             {isLoading && <Spinner color="red.500" />}
           </Button>
-          <Box>
+          {/* <Box> */}
             <Link to="/signup">SignUp</Link>
-          </Box>
+          {/* </Box> */}
           <Box>
             <Link to="/signin">Forgot your password?</Link>
           </Box>
