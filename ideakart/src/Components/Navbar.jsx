@@ -54,7 +54,7 @@ export const Navbar = () => {
                   fontSize="1.2rem"
                   letterSpacing={"1px"}
                 >
-                  IDEACART
+                  IDEAKART
                 </Text>
               </Link>
             </Box>
