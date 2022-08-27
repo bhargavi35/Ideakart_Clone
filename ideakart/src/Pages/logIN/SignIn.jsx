@@ -25,7 +25,7 @@ export const SignIn = () => {
     setIsLoading(true);
     setTimeout(() => {
       setIsLoading(false);
-      navigate("/details");
+      navigate("/");
     }, 1500);
   };
   return (
