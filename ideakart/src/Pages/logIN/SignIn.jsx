@@ -21,19 +21,13 @@ export const SignIn = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     var { email, password } = user;
-    // if (user.email === user.reemail && user.password === user.repassword) {
-    //   navigate("/");
-    //   alert("Login Successful");
-    // } else if (email === "" || password === "") {
-    //   alert("please fill all fields");
-    // }
 
-        if (email === "" || password === "") {
-          alert("please fill all fields");
-        } else {
-          navigate("/");
-          alert("Login Successful");
-        }
+    if (email === "" || password === "") {
+      alert("please fill all fields");
+    } else {
+      navigate("/");
+      alert("Login Successful");
+    }
   };
   return (
     <>
