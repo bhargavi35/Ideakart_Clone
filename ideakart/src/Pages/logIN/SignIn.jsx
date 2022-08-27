@@ -25,7 +25,7 @@ export const SignIn = () => {
     setIsLoading(true);
     setTimeout(() => {
       setIsLoading(false);
-      navigate("/");
+      navigate("/details");
     }, 1500);
   };
   return (
@@ -47,9 +47,9 @@ export const SignIn = () => {
             Login
             {isLoading && <Spinner color="red.500" />}
           </Button>
-          {/* <Box> */}
+          <Box>
             <Link to="/signup">SignUp</Link>
-          {/* </Box> */}
+          </Box>
           <Box>
             <Link to="/signin">Forgot your password?</Link>
           </Box>
