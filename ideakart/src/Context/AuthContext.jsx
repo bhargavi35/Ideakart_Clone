@@ -1,51 +1,35 @@
-// import { createContext, useState } from "react";
-// import { useNavigate } from "react-router-dom";
+import React, { createContext, useState } from "react";
+import getData from "../Components/api";
+export const AuthContext = createContext();
+const initState = {
+  isAuth: false,
+  token: null
+};
+export const AuthProvider = ({ children }) => {
+  const [isAuth, setAuth] = useState(false);
+  const [state, setState] = useState(initState);
 
-// export const AuthContext = createContext();
+  const handleLogin = () => {
+    setState({
+      ...initState,
+      isAuth: true,
+      token: "QpwL5tke4Pnpja7X4"
+    });
+  };
+  const login = (username, password) => {
+    if (username && password) {
+      setAuth(true);
+      console.log(getData);
+      handleLogin();
+    }
+  };
 
-// export const AuthContextProvider = ({ children }) => {
-//   const navigate = useNavigate();
-
-//   const [state, setState] = useState({
-//     isAuth: false,
-//   });
-
-//   const handleLogin = () => {
-//     setState({
-//       ...state,
-//       isAuth: true,
-//     });
-//     navigate("/dashboard");
-//   };
-
-//   const handleLogout = () => {
-//     setState({
-//       ...state,
-//       login: false,
-//     });
-//   };
-
-//   return (
-//     <AuthContext.Provider
-//       value={{ state, setState, handleLogin, handleLogout }}
-//     >
-//       {children}
-//     </AuthContext.Provider>
-//   );
-// };
-import React, { useState } from "react";
-
-export const AuthContext = React.createContext();
-
-function AuthProvider({ children }) {
-  const [isAuth, setIsAuth] = useState(false);
-  const toggleAuth = () => setIsAuth(!isAuth);
-
+  const logout = () => {
+    setAuth(false);
+  };
   return (
-    <AuthContext.Provider value={{ isAuth, toggleAuth }}>
+    <AuthContext.Provider value={{ isAuth, login, logout, state, handleLogin }}>
       {children}
     </AuthContext.Provider>
   );
-}
-
-export default AuthProvider;
+};
