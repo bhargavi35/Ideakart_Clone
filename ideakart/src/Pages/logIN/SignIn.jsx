@@ -47,12 +47,16 @@ export const SignIn = () => {
             Login
             {isLoading && <Spinner color="red.500" />}
           </Button>
-          <Box>
-            <Link to="/signup">SignUp</Link>
-          </Box>
-          <Box>
-            <Link to="/signin">Forgot your password?</Link>
-          </Box>
+          <Button
+            style={{ color: "blue" ,width:"20%",backgroundColor:"white" }}
+            className="button registerr"
+            onClick={() => navigate("/signup")}
+          >
+            Sign up
+          </Button>
+          <Button style={{ color: "blue",paddingLeft:"1%" ,width:"50%" ,backgroundColor:"white"}} className="button registerr">
+            Forgot your Password?
+          </Button>
         </Stack>
       </Container>
 
