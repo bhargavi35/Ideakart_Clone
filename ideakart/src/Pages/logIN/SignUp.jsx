@@ -68,7 +68,7 @@ export const SignUp = () => {
             <Text style={{ textAlign: "left" }}>Password confirmation</Text>
             <Input placeholder="Enter password" type="password" />
 
-            <Button bgColor="green" width="20%">
+            <Button bgColor="green" width="20%" onClick={register}>
               Sign up
               {isLoading && <Spinner color="red.500" />}
             </Button>
