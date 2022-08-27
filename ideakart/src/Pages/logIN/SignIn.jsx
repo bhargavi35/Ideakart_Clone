@@ -27,7 +27,6 @@ export const SignIn = () => {
       navigate("/details");
     }, 1500);
   };
-
   return (
     <>
       <Navbar />
