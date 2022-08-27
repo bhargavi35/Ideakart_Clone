@@ -101,16 +101,12 @@ export const Navbar = () => {
             <Box>
               <Link to={"/contact"}>Contact</Link>
             </Box>
-            {/* {!loggedIn && ( */}
             <Box>
               <Link to={"/signin"}>Sign In</Link>
             </Box>
-            {/* )} */}
-            {/* {!signedUp && !loggedIn && ( */}
             <Box>
               <Link to={"/signup"}>Sign Up</Link>
             </Box>
-            {/* )} */}
           </Flex>
 
           <IconButton
@@ -124,7 +120,6 @@ export const Navbar = () => {
             variant={"ghost"}
             aria-label={"Toggle Navigation"}
           />
-          {/* {loggedInUser.length > 0 && <Profile />} */}
         </Flex>
       </Box>
       {isOpen && (
@@ -189,7 +184,7 @@ export const Profile = () => {
           minW={0}
         >
           <Avatar
-            name="Dan Abrahmov"
+            name="Banu"
             src="https://avatars.dicebear.com/api/male/username.svg"
           />
         </MenuButton>
@@ -201,8 +196,6 @@ export const Profile = () => {
               src={"https://avatars.dicebear.com/api/male/username.svg"}
             />
           </Center>
-          <br />
-          <Center>{/* <p>{loggedInUser}</p> */}</Center>
           <br />
           <MenuDivider />
           <MenuItem>Logout</MenuItem>

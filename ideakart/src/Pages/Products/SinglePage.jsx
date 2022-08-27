@@ -49,6 +49,7 @@ export const SinglePage = () => {
                     border: "none",
                     fontSize: "16px",
                     paddingTop: "3%",
+                    borderRadius:"5%"
                   }}
                   onClick={handleClick}
                 >
@@ -109,7 +110,7 @@ export const SinglePage = () => {
                 <span>{showData.price}</span> &ensp; &ensp; &ensp; &ensp; &ensp;
                 &ensp; &ensp;&ensp; &ensp; &ensp; &ensp; &ensp;&ensp;&ensp;
                 &ensp; &ensp; &ensp; &ensp;&ensp;&ensp; &ensp;
-                <button onClick={handleClick}>Buy Now</button>
+                <button className="button1" onClick={handleClick}>Buy Now</button>
               </div>
             </div>
           </div>
