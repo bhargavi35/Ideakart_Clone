@@ -1,20 +1,18 @@
-import {
-  Button,
-  Container,
-  Input,
-  Spinner,
-  Stack,
-  Heading,
-  Text,
-} from "@chakra-ui/react";
+// import {
+//   Button,
+//   Container,
+//   Input,
+//   Stack,
+//   Heading,
+//   Text,
+// } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Navbar } from "../../Components/Navbar";
 import { Footer } from "../../Components/Footer";
+import { Container, Input,Text } from "@chakra-ui/react";
 
 export const SignUp = () => {
-  const [isLoading, setIsLoading] = useState(false);
-
   const navigate = useNavigate();
 
   const [user, setUser] = useState({
@@ -32,16 +30,12 @@ export const SignUp = () => {
       [name]: value,
     });
   };
-
   const register = () => {
     const { name, mobile, email, password, rePassword } = user;
     if (name && mobile && email && password && rePassword === password) {
-      // console.log(user.name)
-      // console.log(user.email)
-      // console.log(user.password)
-      navigate("/signIn");
+      navigate("/signin");
     } else {
-      alert("invalid input");
+      alert("invalid Input");
     }
   };
 
@@ -49,45 +43,140 @@ export const SignUp = () => {
     <>
       <Navbar />
       <div style={{ fontFamily: "Times" }}>
-        <Container maxW="md" marginLeft="6%">
-          <Stack direction="column" textAlign="justify" gap="0.5rem">
-            <Heading>Sign up</Heading>
-            <Text style={{ textAlign: "left" }}>Name</Text>
-            <Input placeholder="Enter Name" onChange={handleChange} />
-            <Text style={{ textAlign: "left" }}>Mobile Number</Text>
-            <Input placeholder="Enter Mobile Number" onChange={handleChange} />
-            <Text style={{ textAlign: "left" }}>Email</Text>
-            <Input placeholder="Enter email" onChange={handleChange} />
-            <Text style={{ textAlign: "left" }}>
+        <div
+          style={{ textAlign: "left", marginLeft: "10%" }}
+          className="divone"
+        >
+          <h4 style={{ fontSize: "30px" }}>Sign up</h4>
+          {console.log("User", user)}
+          <div className="label">
+            <Text
+              style={{ fontSize: "18px", fontWeight: "600" }}
+              className="label"
+            >
+              Name
+            </Text>
+            <br />
+            <Input
+              style={{
+                width: "60%",
+                height: "30px",
+                border: "1px solid black",
+              }}
+              type="text"
+              name="name"
+              onChange={handleChange}
+            ></Input>
+            <br />
+            <br />
+            <Text
+              style={{ fontSize: "18px", fontWeight: "600" }}
+              className="label"
+            >
+              Mobile Number
+            </Text>
+            <br />
+            <Input
+              style={{
+                width: "60%",
+                height: "30px",
+                border: "1px solid black",
+              }}
+              type="text"
+              name="mobile"
+              onChange={handleChange}
+            ></Input>
+            <br />
+            <br />
+            <Text
+              style={{ fontSize: "18px", fontWeight: "600" }}
+              className="label"
+              htmlFor=""
+            >
+              Email address
+            </Text>
+            <br />
+            <Input
+              style={{
+                width: "60%",
+                height: "30px",
+                border: "1px solid black",
+              }}
+              type="text"
+              name="email"
+              onChange={handleChange}
+            ></Input>
+            <br />
+            <br />
+            <Text
+              style={{ fontSize: "18px", fontWeight: "600" }}
+              className="label"
+              htmlFor=""
+            >
               Password
               <span style={{ fontStyle: "italic", fontSize: "16px" }}>
                 (6 characters minimum)
               </span>
             </Text>
-            <Input placeholder="Enter password" type="password" />
-
-            <Text style={{ textAlign: "left" }}>Password confirmation</Text>
-            <Input placeholder="Enter password" type="password" />
-
-            <Button bgColor="green" width="20%" onClick={register} >
-              Sign up
-              {isLoading && <Spinner color="red.500" />}
-            </Button>
-            <Button
+            <br />
+            <Input
               style={{
-                color: "blue",
-                width: "20%",
-                marginLeft: "1%",
-                cursor: "pointer",
-                backgroundColor: "white",
+                width: "60%",
+                height: "30px",
+                border: "1px solid black",
               }}
-              className="button log"
-              onClick={() => navigate("/signIn")}
+              type="password"
+              name="password"
+              onChange={handleChange}
+            ></Input>
+            <br />
+            <br />
+            <Text
+              style={{ fontSize: "18px", fontWeight: "600" }}
+              className="label"
+              htmlFor=""
             >
-              Login
-            </Button>
-          </Stack>
-        </Container>
+              Password confirmation
+            </Text>
+            <br />
+            <Input
+              style={{
+                width: "60%",
+                height: "30px",
+                border: "1px solid black",
+              }}
+              type="password"
+              name="rePassword"
+              onChange={handleChange}
+            ></Input>
+          </div>
+          <div className="ticbox" style={{ display: "flex" }}></div>
+          <br />
+          <div
+            style={{
+              border: "1px solid green",
+              width: "60px",
+              backgroundColor: "green",
+              color: "white",
+              textAlign: "center",
+              height: "30px",
+              borderRadius: "3px",
+              cursor: "pointer",
+            }}
+            className="button signup"
+            onClick={register}
+          >
+            Sign up
+          </div>
+          <br />
+          <div
+            style={{ color: "blue", cursor: "pointer" }}
+            className="button log"
+            onClick={() => navigate("/signin")}
+          >
+            Login
+          </div>
+        </div>
       </div>
       <Footer />
     </>
